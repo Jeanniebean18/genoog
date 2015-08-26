@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#home {
+  position:relative;
+  width:100%;
+  /*  border:1px solid red;*/
+  
+}
+
+body {
+  margin: 0;
+}
+
+/*clear fix*/
+.clearfix::after {
+  content:" ";
+  display:table;
+  clear:both;
+  
+}
+
+
+h1 {
+  position:relative;
+  text-align:center;
+  font-size:100%;
+  font-family: 'Roboto Slab', serif;
+  color:#4F5069;
+}
+
+p {
+  position:relative;
+  text-align:center;
+  font-size:80%;
+  font-family: 'Roboto Slab', serif;
+  color:white;
+  font-weight:300;
+}
+#partone {
+  width:100%;
+  height:auto;
+  margin:0;
+  height:320px;
+  
+/*  border:1px solid;*/
+}
+
+
+#hero {
+  width:100%;
+  position:relative;
+  display:block;
+  
+}
+.hero-copy {
+  left:15%;
+  position:absolute;
+  margin-top:3%;
+  width:70%;
+  z-index:100;
+}
+
+#truck {
+  position:absolute;
+  bottom:-25px;
+  left:10%;
+  width:75%;
+  
+}
+
+#foodtrucks {
+  width:100%;
+  margin-top:-30px;
+}
+
+#parttwo {
+  position:relative;
+  display:block;
+  background-color:#4F5069;
+  width:100%;
+  margin-top:4%;
+  padding:1%;
+}
