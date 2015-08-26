@@ -12,6 +12,13 @@ html {
   
 }
 
+.center {
+  position:relative;
+  margin-right:auto;
+  margin-left:auto;
+  display:block;
+}
+
 body {
   margin: 0;
 }
@@ -26,8 +33,8 @@ body {
 
 h1 {
   position:relative;
-  text-align:left;
-  font-size:155%;
+  text-align:center;
+  font-size:175%;
   font-family: 'Roboto Slab', serif;
   color:#4F5069;
   
@@ -45,7 +52,7 @@ h2 {
 p {
   position:relative;
   text-align:center;
-  font-size:90%;
+  font-size:80%;
   font-family: 'Roboto Slab', serif;
   color:white;
   font-weight:300;
@@ -77,9 +84,9 @@ p {
 
 #truck {
   position:absolute;
-  bottom:-25px;
-  left:10%;
-  width:75%;
+  bottom:-35px;
+  left:4%;
+  width:85%;
   
 }
 
@@ -94,7 +101,7 @@ p {
   background-color:#4F5069;
   width:100%;
   margin-top:4%;
-  padding:1%;
+  padding:2%;
 }
 
 #partthree {
@@ -103,7 +110,13 @@ p {
 
 #train {
   position:relative;
-  width:40%;
+  width:80%;
+ 
+}
 
+#loco-text {
+  position:relative;
+  width:100%;
+ 
   
 }
