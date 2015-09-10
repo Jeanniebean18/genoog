@@ -151,8 +151,9 @@ b{
   
   #social {
     position:absolute;
-    bottom:5%;
-    left:15%;
+    top:60%;
+    
+    left:40%;
     
     margin:3%;
   /*  border:1px solid;*/
