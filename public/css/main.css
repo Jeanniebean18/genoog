@@ -25,6 +25,7 @@ body {
 
 a {
   text-decoration:none;
+  color:black;
 }
 
 /*clear fix*/
@@ -47,18 +48,19 @@ a {
 #hero-image {
   position:absolute;
   top:0;
-  padding-top:5%;
+  padding-top:3%;
   display:block;
   width:100%;
-  height:700px;
-  background:url("../assets/hero.png");
+  height:690px;
+  background:url("../assets/omahadog.png");
+  background-color:red;
   background-size:cover;
   background-position:50% 50%;
  
 }
 
 #wrapper {
-  padding-top:3%;
+  padding-top:5%;
 }
 
 
@@ -67,25 +69,35 @@ h1 {
   color:white;
   text-align:center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 65px;
+  font-size: 15px;
   font-weight:200;
-  line-height:65px;
+  line-height:0px;
   
 }
 
-h1.main {
-  line-height:0px;
-  
+#logo {
+  width:50%;
+  margin-bottom:0;
 }
 
 h2 {
   position:relative;
-  color:black;
+  color:white;
   text-align:center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 122px;
-  font-weight:800;
+  font-size: 35px;
+  font-weight:200;
   line-height:0px;
+  margin-top:-50px;
+  
+}
+#social {
+  position:absolute;
+  top:5%;
+  left:5%;
+  width:11%;
+  maring:3%;
+/*  border:1px solid;*/
 }
 
 button {
@@ -123,61 +135,19 @@ b{
   color:black;
 }
 
-#question-wrapper {
-  position:relative;
-  width:100%;
-}
-#q1o1,
-#q1o2,
-#q1o3,
-#q1o4 {
-  padding:3%;
-  padding-top:4%;
-  position:relative;
-  display:block;
-  float:left;
-  width:22%;
-  margin:1%;
-  border:1px solid white;
-  height:300px;
-  color:white;
-  text-align:center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 23px;
-  font-weight:100;
-}
 
-#q1o1:hover,
-#q1o2:hover,
-#q1o3:hover,
-#q1o4:hover {
-  border-color:black;
-}
-  #q2o1,
-  #q2o2,
-  #q2o3,
-  #q2o4 {
-    padding:3%;
-    padding-top:4%;
+@media (max-width: 600px){
+  h2 {
     position:relative;
-    display:block;
-    float:left;
-    width:22%;
-    margin:1%;
-    border:1px solid white;
-    height:300px;
     color:white;
     text-align:center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
-    font-weight:100;
+    font-size: 35px;
+    font-weight:200;
+    line-height:40px;
+    margin-top:0px;
+  
   }
-
-  #q2o1:hover,
-  #q2o2:hover,
-  #q2o3:hover,
-  #q2o4:hover {
-    border-color:black;
-
-  }
+  
+}
 
