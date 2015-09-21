@@ -1,4 +1,6 @@
-html {
+@media (max-width: 3000px){
+  
+  html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -40,7 +42,7 @@ a {
   position:relative;
   display:block;
   width:100%;
-  height:600px;
+  height:900px;
   margin-top:0;
   /*  border:1px solid red;*/
 }
@@ -51,7 +53,7 @@ a {
   padding-top:3%;
   display:block;
   width:100%;
-  height:600px;
+  height:900px;
   background:url("../assets/omahadog.png");
   background-color:black;
   background-size:cover;
@@ -88,7 +90,7 @@ h2 {
   font-size: 35px;
   font-weight:200;
   line-height:0px;
-  margin-top:-50px;
+  margin-top:-200px;
   
 }
 #social {
@@ -122,6 +124,7 @@ button:hover {
 
 footer {
   position:relative;
+  bottom:0;
   color:#A5A4A4;
   text-align:center;
   font-family: 'Montserrat', sans-serif;
@@ -135,6 +138,86 @@ b{
   color:black;
 }
 
+}
+
+@media (max-width: 1800px){
+  
+  #hero {
+    position:relative;
+    display:block;
+    width:100%;
+    height:750px;
+    margin-top:0;
+    /*  border:1px solid red;*/
+  }
+
+  #hero-image {
+    position:absolute;
+    top:0;
+    padding-top:3%;
+    display:block;
+    width:100%;
+    height:750px;
+    background:url("../assets/omahadog.png");
+    background-color:black;
+    background-size:cover;
+    background-position:50% 50%;
+ 
+  }
+  
+  h2 {
+    position:relative;
+    color:white;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight:200;
+    line-height:0px;
+    margin-top:-100px;
+  
+  }
+}
+
+
+@media (max-width: 1059px){
+  h2 {
+    position:relative;
+    color:white;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight:200;
+    line-height:40px;
+    margin-top:-50px;
+  
+  }
+  
+
+  
+  #hero {
+    position:relative;
+    display:block;
+    width:100%;
+    height:600px;
+    margin-top:0;
+    /*  border:1px solid red;*/
+  }
+
+  #hero-image {
+    position:absolute;
+    top:0;
+    padding-top:3%;
+    display:block;
+    width:100%;
+    height:600px;
+    background:url("../assets/omahadog.png");
+    background-color:black;
+    background-size:cover;
+    background-position:50% 50%;
+ 
+  }
+  
+}
 
 @media (max-width: 600px){
   h2 {
@@ -145,7 +228,7 @@ b{
     font-size: 35px;
     font-weight:200;
     line-height:40px;
-    margin-top:0px;
+    margin-top:-30px;
   
   }
   
@@ -153,10 +236,33 @@ b{
     position:absolute;
     top:60%;
     
-    left:4%;
+    left:40%;
     
     margin:3%;
   /*  border:1px solid;*/
+  }
+  
+  #hero {
+    position:relative;
+    display:block;
+    width:100%;
+    height:600px;
+    margin-top:0;
+    /*  border:1px solid red;*/
+  }
+
+  #hero-image {
+    position:absolute;
+    top:0;
+    padding-top:3%;
+    display:block;
+    width:100%;
+    height:600px;
+    background:url("../assets/omahadog.png");
+    background-color:black;
+    background-size:cover;
+    background-position:50% 50%;
+ 
   }
   
 }
