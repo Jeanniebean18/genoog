@@ -75,6 +75,12 @@ a {
   padding-top:5%;
 }
 
+.sticker {
+  width:30%;
+  
+  position:relative;
+}
+
 
 h1 {
   position:relative;
@@ -346,6 +352,11 @@ b{
     line-height:25px;
   
   
+  }
+  .sticker {
+    width:80%;
+  
+    position:relative;
   }
   #businessform {
     width:320px;
