@@ -372,7 +372,10 @@ b{
 
 @media (max-width: 600px){
 
-  
+  h4 {
+    font-size:20px;
+    line-height:23px;
+  }
   #hero {
     position:relative;
     display:block;
