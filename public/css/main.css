@@ -347,6 +347,27 @@ b{
   
   
   }
+  #businessform {
+    width:320px;
+  /*  border:1px solid;*/
+    height:auto;
+    
+  }
+  #stickerform {
+    width:320px;
+  /*  border:1px solid;*/
+    height:auto;
+  
+  }
+  .form {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    font-size: 20px;
+    height:60px;
+    padding:1%;
+    width:220px;
+  
+  }
 }
 
 @media (max-width: 600px){

@@ -49,8 +49,8 @@
       <h3>events</h3>
       <h3>hotels</h3>
       <h3>work places</h3>
-      <button> submit a business </button>
-      <button> request a sticker </button>
+    <a class="scroll" data-speed="2000" href="#businessform">   <button> submit a business </button>
+      <a class="scroll" data-speed="2000" href="#stickerform"><button> request a sticker </button>
     </nav>
     
   
@@ -81,7 +81,7 @@
   <div id="thanks"></div>
   <form action="/contacts" method="post"> 
     <input type="text" class="form" placeholder="business name" name="name"required></h2>  
-    <input type="hidden" name="date" value="<%=Time.now%>"> <input type="submit" value="submit" id="submit" class="submit"> 
+    <input type="hidden" name="date" value="<%=Time.now%>"> <input type="submit" value="submit" id="submit" class="submit "> 
   </form>
 </div>
 
