@@ -50,6 +50,7 @@
       <h3>hotels</h3>
       <h3>work places</h3>
       <button> submit a business </button>
+      <button> request a sticker </button>
     </nav>
     
   
@@ -71,3 +72,30 @@
   <p class="centertext"> tag your dog photos #omahadog on instagram</p>
   <!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/92242a6d7d8ef46528477e2feb2f92cd3562b9e0.html" id="instansive_92242a6d7d" name="instansive_92242a6d7d"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
   
+  
+  <div id="forms">
+  <!-- submit business form -->
+<h4>Know a dog-friendly business in Omaha? Tell us! Once we confirm it, we'll post it here on the site. </h4>
+
+<div id="businessform" class="center">
+  <div id="thanks"></div>
+  <form action="/contacts" method="post"> 
+    <input type="text" class="form" placeholder="business name" name="name"required></h2>  
+    <input type="hidden" name="date" value="<%=Time.now%>"> <input type="submit" value="submit" id="submit" class="submit"> 
+  </form>
+</div>
+
+<!-- get stick form -->
+<h4>Put a Omaha.Dog sticker on your door so customers know you're dog-friendly! 
+  <br>Request one here, and we'll mail it to you!</h4>
+
+<div id="stickerform" class="center">
+  <div id="thanks-two"></div>
+  <form action="/stickers" method="post"> 
+    <input type="text" class="form" placeholder="business name" name="name" required></h2> 
+    <input type="text" class="form" placeholder="business address" name="address" required></h2>  
+    <input type="hidden" name="date" value="<%=Time.now%>"> <input type="submit" value="submit" id="submit" class="submit"> 
+  </form>
+</div>
+
+</div>
