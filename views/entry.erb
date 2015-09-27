@@ -8,37 +8,99 @@
   <p> Area (midtown/downtown): <input type="text" placeholder="area" class="form" name="area"  required></p>
   <!-- what to do with pet information.  -->
   
-   Category:
-    <select name="category">
-      <option value="1">restaurants</option>
-      <option value="2">bars</option>
-      <option value="3">shopping</option>
-      <option value="4">coffee</option>
-      <option value="5">hotels</option>
-      <option value="6">work places</option>
-      <option value="7">parks</option>
-      <option value="8">events</option>
-    </select>
+  Category:
+  <select name="category">
+    <option value="1">restaurants</option>
+    <option value="2">bars</option>
+    <option value="3">shopping</option>
+    <option value="4">coffee</option>
+    <option value="5">hotels</option>
+    <option value="6">work places</option>
+    <option value="7">parks</option>
+    <option value="8">events</option>
+  </select>
     
-    <input type="checkbox"  name="where[]" value="dogs allowed on the patio">patio</input>
-    <input type="checkbox"  name="where[]" value="dogs allowed inside"> inside</input>
+  <input type="checkbox"  name="where[]" value="dogs allowed on the patio">patio</input>
+  <input type="checkbox"  name="where[]" value="dogs allowed inside"> inside</input>
  
-   <input type="submit" value="submit" class="submit">
+  <input type="submit" value="submit" class="submit">
 
-    </form>
+</form>
     
-    <% businesses = Business.all %>
-  
-    <% businesses.each do |business| %>
-   
+
+   <%restaurants = Business.where("category = '1'")%>
+    <%bars = Business.where("category = '2'")%>
+     <%shoppings = Business.where("category = '3'")%>
+     <%coffees = Business.where("category = '4'")%>
+
+   <!-- restaurants -->
+
  
- <h5> 
-   <%=business.name%>
-   <br>
-   <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
-   <br><a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
-   <p class="centertext"> <%=business.area%></p>
-   <p class="centertext"> <%=business.where.chomp('"')%></p>
- </h5> 
-<p class="centertext"> <a href ="/business/<%=business.id%>"> delete </a></p>
-    <%end%>
+  <h4> restaurants </h4>
+  <hr>
+  <% restaurants.each do |r| %>
+  <h5> 
+    <%=r.name%>
+    <p> <%=r.area%></p>
+    <a target="blank" href="<%=r.link%>"> 	<%=r.address%> </a>
+    <br>
+    <a target="blank" href="tel:<%=r.phone%>"><%=r.phone%></a>
+    <p> <%=r.where.gsub('"', '')%></p>
+  </h5> 
+
+
+<p> <a href ="/business/<%=r.id%>"> delete </a></p>
+<%end%>
+<!-- bars -->
+
+  <h4> bars </h4>
+  <hr>
+  <% bars.each do |b| %>
+  <h5> 
+    <%=b.name%>
+    <p> <%=b.area%></p>
+    <a target="blank" href="<%=b.link%>"> 	<%=b.address%> </a>
+    <br>
+    <a target="blank" href="tel:<%=b.phone%>"><%=b.phone%></a>
+    <p> <%=b.where.gsub('"', '')%></p>
+  </h5> 
+
+
+<p> <a href ="/business/<%=b.id%>"> delete </a></p>
+<%end%>
+<!-- shopping -->
+
+  <h4> shopping </h4>
+  <hr>
+  <% shoppings.each do |business| %>
+  <h5> 
+    <%=business.name%>
+    <p> <%=business.area%></p>
+    <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+    <br>
+    <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+    <p> <%=business.where.gsub('"', '')%></p>
+  </h5> 
+
+
+<p> <a href ="/business/<%=business.id%>"> delete </a></p>
+<%end%>
+<!-- coffee -->
+
+  <h4> coffee </h4>
+  <hr>
+   <% coffees.each do |business| %>
+  <h5> 
+    <%=business.name%>
+    <p> <%=business.area%></p>
+    <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+    <br>
+    <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+    <p> <%=business.where.gsub('"', '')%></p>
+  </h5> 
+
+
+<p> <a href ="/business/<%=business.id%>"> delete </a></p>
+<%end%>
+
+

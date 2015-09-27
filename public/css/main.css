@@ -118,12 +118,14 @@ h1 {
 
 p {
   position:relative;
-  color:white;
-  text-align:left;
+  color:gray;
+  text-align:center;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight:200;
-  line-height:0px;
+  line-height:15px;
+  
+  
   
 }
 
@@ -191,7 +193,8 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   font-weight:200;
-  line-height:35px;
+  
+  
   
 }
 
