@@ -9,16 +9,16 @@ var thanks = document.getElementById("thanks");//
 // var result = document.getElementById("result");//
 
 
-submit.onclick = thanksmessage;
+// submit.onclick = thanksmessage;
 // q1o2.onclick = process_answer_submission2;
 // q1o3.onclick = process_answer_submission3;
 // q1o4.onclick = process_answer_submission4;
 
 
-var thanksmessage = function() {
-  thanks.innerHTML = "thanks";
-
-}
+// var thanksmessage = function() {
+//   thanks.innerHTML = "thanks";
+//
+// }
 
 // var process_answer_submission2 = function() {
 //  score = score + 3;

@@ -44,7 +44,7 @@ a {
 .centertext {
   text-align:center;
   font-size:15px;
-  
+  line-height:17px;
   color:#B2B2B2;
 }
 
@@ -148,6 +148,7 @@ h4 {
 
 hr {
   width:70%;
+  margin-top:-15px;
 }
 
 h5 {
@@ -410,6 +411,17 @@ b{
     margin-top:0;
     /*  border:1px solid red;*/
   }
+  
+  h5 {
+    position:relative;
+    color:black;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight:200;
+    line-height:20px;
+  
+  }
 
   #hero-image {
     position:absolute;
@@ -473,23 +485,24 @@ b{
 
 @media (max-width: 414px){
   #social {
-    top:560px;
-    left:40%;
+    display:none;
     
   }
   
   #hero {
    
-    height:620px;
+    height:640px;
    
     /*  border:1px solid red;*/
   }
 
   #hero-image {
     
-    height:620px;
+    height:640px;
  
  
   }
+  
+  
 }
 
