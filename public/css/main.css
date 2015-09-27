@@ -472,6 +472,9 @@ b{
   .facebook {
     width:20px;
   }
+  #social {
+  display:none;
+  }
   
 }
 
@@ -490,6 +493,10 @@ b{
     height:640px;
  
  
+  }
+  
+  #social {
+  display:none;
   }
   
   
