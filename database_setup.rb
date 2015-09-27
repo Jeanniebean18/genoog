@@ -9,3 +9,22 @@ unless ActiveRecord::Base.connection.table_exists?(:contacts)
     t.string :date
   end  
 end
+
+
+
+
+
+unless ActiveRecord::Base.connection.table_exists?(:businesses)
+  ActiveRecord::Base.connection.create_table :businesses do |t|
+    t.string :name
+    t.string :address
+    t.string :phone
+    t.string :link
+    t.string :area
+    t.integer :category
+    t.string :where
+  end  
+end
+
+
+

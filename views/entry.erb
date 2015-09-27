@@ -1,0 +1,44 @@
+<h1> Create Business</h1> 
+
+<form action="/business" method="post">
+  <p> Name: <input type="text" placeholder="name" name="name"  class="form" required></p>
+  <p> Address: <input type="text" placeholder="address" name="address"  class="form" required></p>
+  <p> Phone: <input type="text" placeholder="phone" name="phone"  class="form" required></p>
+  <p> Address Link: <input type="text" placeholder="address link" class="form" name="link"  required></p>
+  <p> Area (midtown/downtown): <input type="text" placeholder="area" class="form" name="area"  required></p>
+  <!-- what to do with pet information.  -->
+  
+   Category:
+    <select name="category">
+      <option value="1">restaurants</option>
+      <option value="2">bars</option>
+      <option value="3">shopping</option>
+      <option value="4">coffee</option>
+      <option value="5">hotels</option>
+      <option value="6">work places</option>
+      <option value="7">parks</option>
+      <option value="8">events</option>
+    </select>
+    
+    <input type="checkbox"  name="where[]" value="dogs allowed on the patio">patio</input>
+    <input type="checkbox"  name="where[]" value="dogs allowed inside"> inside</input>
+ 
+   <input type="submit" value="submit" class="submit">
+
+    </form>
+    
+    <% businesses = Business.all %>
+  
+    <% businesses.each do |business| %>
+   
+ 
+ <h5> 
+   <%=business.name%>
+   <br>
+   <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+   <br><a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+   <p class="centertext"> <%=business.area%></p>
+   <p class="centertext"> <%=business.where.chomp('"')%></p>
+ </h5> 
+<p class="centertext"> <a href ="/business/<%=business.id%>"> delete </a></p>
+    <%end%>

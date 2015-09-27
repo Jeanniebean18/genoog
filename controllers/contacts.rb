@@ -6,7 +6,22 @@ get "/dog-friendly-omaha-blog" do
 erb :"blog"
 end
 
+get "/entry" do
+erb :"entry"
+end
 
+post "/business" do
+@business = Business.create({name:params[:name], address: params[:address], phone:params[:phone], link:params[:link], area:params[:area], category:params[:category], where:params[:where]})
+if @business.save
+ redirect "/entry" 
+end
+end
+
+get "/business/:x" do
+  @business = Business.find(params["x"])
+  @business.destroy
+  redirect "/entry"
+end
 
 
 post "/contacts" do

@@ -42,6 +42,9 @@ end
 
 
 require_relative "models/contact.rb"
+require_relative "models/business.rb"
+
+
 
 
 
