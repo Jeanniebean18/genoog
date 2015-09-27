@@ -2,6 +2,9 @@ get "/" do
 erb :"index"
 end
 
+get "/dog-friendly-omaha-blog" do
+erb :"blog"
+end
 
 
 
