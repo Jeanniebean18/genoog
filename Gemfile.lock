@@ -39,6 +39,9 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    racksh (1.0.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -66,6 +69,7 @@ DEPENDENCIES
   pg
   pony (~> 1.11)
   pry
+  racksh
   sinatra
   sinatra-contrib
   sqlite3
