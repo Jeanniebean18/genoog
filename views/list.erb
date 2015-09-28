@@ -1,1 +1,162 @@
-<%=Business.all%>
+
+
+<%restaurants = Business.where("category = '1'")%>
+<%bars = Business.where("category = '2'")%>
+<%coffees = Business.where("category = '3'")%>
+<%shoppings = Business.where("category = '4'")%>
+<%parks = Business.where("category = '5'")%>
+<%events = Business.where("category = '6'")%>
+<%hotels = Business.where("category = '7'")%>
+<%workplaces = Business.where("category = '8'")%>
+
+<!-- restaurants -->
+
+ 
+<h4> restaurants </h4>
+<hr>
+<% restaurants.each do |business| %>
+<h5> 
+  <%=business.name%>
+  <p> <%=business.area%></p>
+  <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+  <br>
+  <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+  <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+</h5> 
+
+
+<p> <a href ="/business/<%=business.id%>"> delete </a></p>
+<%end%>
+<!-- bars -->
+
+<h4> bars </h4>
+<hr>
+<% bars.each do |business| %>
+<h5> 
+  <%=business.name%>
+  <p> <%=business.area%></p>
+  <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+  <br>
+  <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+  <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+</h5> 
+
+
+<p> <a href ="/business/<%=business.id%>"> delete </a></p>
+<%end%>
+<!-- shopping -->
+
+<h4> shopping </h4>
+<hr>
+<% shoppings.each do |business| %>
+<h5> 
+  <%=business.name%>
+  <p> <%=business.area%></p>
+  <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+  <br>
+  <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+  <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+</h5> 
+
+
+<p> <a href ="/business/<%=business.id%>"> delete </a></p>
+<%end%>
+<!-- coffee -->
+
+<h4> coffee </h4>
+<hr>
+<% coffees.each do |business| %>
+<h5> 
+  <%=business.name%>
+  <p> <%=business.area%></p>
+  <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+  <br>
+  <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+  <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+</h5> 
+
+
+<p> <a href ="/business/<%=business.id%>"> delete </a></p>
+<%end%>
+
+<h4> shopping </h4>
+<hr>
+<% shoppings.each do |business| %>
+<h5> 
+  <%=business.name%>
+  <p> <%=business.area%></p>
+  <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+  <br>
+  <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+  <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+</h5> 
+
+
+<p> <a href ="/business/<%=business.id%>"> delete </a></p>
+<%end%>
+
+<h4> parks </h4>
+<hr>
+<% parks.each do |business| %>
+<h5> 
+  <%=business.name%>
+  <p> <%=business.area%></p>
+  <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+  <br>
+  <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+  <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+</h5> 
+
+
+<p> <a href ="/business/<%=business.id%>"> delete </a></p>
+<%end%>
+
+<h4> events </h4>
+<hr>
+<% events.each do |business| %>
+<h5> 
+  <%=business.name%>
+  <p> <%=business.area%></p>
+  <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+  <br>
+  <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+  <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+</h5> 
+
+
+<p> <a href ="/business/<%=business.id%>"> delete </a></p>
+<%end%>
+
+<h4> hotels </h4>
+<hr>
+<% hotels.each do |business| %>
+<h5> 
+  <%=business.name%>
+  <p> <%=business.area%></p>
+  <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+  <br>
+  <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+ <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+</h5> 
+
+
+<p> <a href ="/business/<%=business.id%>"> delete </a></p>
+<%end%>
+
+<h4> work places </h4>
+<hr>
+<% workplaces.each do |business| %>
+<h5> 
+  <%=business.name%>
+  <p> <%=business.area%></p>
+  <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+  <br>
+  <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+ <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+</h5> 
+
+
+<p> <a href ="/business/<%=business.id%>"> delete </a></p>
+<%end%>
+
+
