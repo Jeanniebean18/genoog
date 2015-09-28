@@ -1,0 +1,10 @@
+
+
+<div class="create">
+<form action="/save_user" method="post">
+  <p> Name (required): <input type="text" placeholder="name" name="name" class ="form" value="<%= params["name"]%>" required></p>
+  <p> Email: <input type="email" placeholder="your email" name="email" class ="form" value="<%= params["email"]%>" required></p>
+  <p> Password: <input type="password" pattern=".{5,10}" placeholder="password" class ="form" name="password" value="" required title="5 to 10 characters"></p>
+  <p> <input type="submit" value="submit"></p>
+</form>
+</div>
