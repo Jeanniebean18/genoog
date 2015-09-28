@@ -2,7 +2,7 @@ var score = 0;
 var counter=0
 
 var submit = document.getElementById("submit");
-var thanks = document.getElementById("thanks");//
+var arrow = document.getElementById("arrow");//
 // var q1o2 = document.getElementById("q1o2"); //
 // var q1o3 = document.getElementById("q1o3"); //
 // var q1o4 = document.getElementById("q1o4"); //
@@ -32,5 +32,24 @@ var thanks = document.getElementById("thanks");//
 //  score = score + 1;
 // }
 
+
+window.onscroll=inView;
+  
+  
+function inView(){
+  // roll out of top star
+  if (window.pageYOffset>500) {
+    arrow.style.display="block";
+   
+    
+  }
+
+  if (window.pageYOffset<500) {
+    arrow.style.display="none";
+   
+  }
+  
+}
+  
 
 

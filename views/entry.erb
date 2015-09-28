@@ -124,6 +124,7 @@
 <%end%>
 
 <h4> parks </h4>
+<p>(off-the-leash)</p>
 <hr>
 <% parks.each do |business| %>
 <h5> 
@@ -142,14 +143,14 @@
 <h4> events </h4>
 <hr>
 <% events.each do |business| %>
-<h5> 
+<h5>
   <%=business.name%>
   <p> <%=business.area%></p>
-  <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+  <a target="blank" href="<%=business.link%>">   <%=business.address%> </a>
   <br>
   <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
   <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
-</h5> 
+</h5>
 
 
 <p> <a href ="/business/<%=business.id%>"> delete </a></p>

@@ -11,7 +11,7 @@
 
 <!-- restaurants -->
 
- 
+ <div id="restaurants">
 <h4> restaurants </h4>
 <hr>
 <% restaurants.each do |business| %>
@@ -23,12 +23,10 @@
   <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
   <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
 </h5> 
-
-
-<p> <a href ="/business/<%=business.id%>"> delete </a></p>
 <%end%>
+</div>
 <!-- bars -->
-
+<div id="bars">
 <h4> bars </h4>
 <hr>
 <% bars.each do |business| %>
@@ -41,11 +39,10 @@
   <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
 </h5> 
 
-
-<p> <a href ="/business/<%=business.id%>"> delete </a></p>
 <%end%>
+</div>
 <!-- shopping -->
-
+<div id="shopping">
 <h4> shopping </h4>
 <hr>
 <% shoppings.each do |business| %>
@@ -58,11 +55,10 @@
   <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
 </h5> 
 
-
-<p> <a href ="/business/<%=business.id%>"> delete </a></p>
 <%end%>
+</div>
 <!-- coffee -->
-
+<div id="coffee">
 <h4> coffee </h4>
 <hr>
 <% coffees.each do |business| %>
@@ -75,10 +71,10 @@
   <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
 </h5> 
 
-
-<p> <a href ="/business/<%=business.id%>"> delete </a></p>
 <%end%>
-
+</div>
+<!-- shopping -->
+<div id="shopping">
 <h4> shopping </h4>
 <hr>
 <% shoppings.each do |business| %>
@@ -91,12 +87,14 @@
   <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
 </h5> 
 
-
-<p> <a href ="/business/<%=business.id%>"> delete </a></p>
 <%end%>
-
+</div>
+<!-- parks -->
+<div id="parks">
 <h4> parks </h4>
+
 <hr>
+<p>(off-the-leash)</p>
 <% parks.each do |business| %>
 <h5> 
   <%=business.name%>
@@ -107,10 +105,11 @@
   <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
 </h5> 
 
-
-<p> <a href ="/business/<%=business.id%>"> delete </a></p>
 <%end%>
+</div>
 
+<!-- events -->
+<div id="events">
 <h4> events </h4>
 <hr>
 <% events.each do |business| %>
@@ -123,10 +122,10 @@
   <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
 </h5> 
 
-
-<p> <a href ="/business/<%=business.id%>"> delete </a></p>
 <%end%>
-
+</div>
+<!-- hotels -->
+<div id="hotels">
 <h4> hotels </h4>
 <hr>
 <% hotels.each do |business| %>
@@ -139,10 +138,10 @@
  <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
 </h5> 
 
-
-<p> <a href ="/business/<%=business.id%>"> delete </a></p>
 <%end%>
-
+</div>
+<!-- works -->
+<div id="workplaces">
 <h4> work places </h4>
 <hr>
 <% workplaces.each do |business| %>
@@ -155,8 +154,7 @@
  <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
 </h5> 
 
-
-<p> <a href ="/business/<%=business.id%>"> delete </a></p>
 <%end%>
+</div>
 
 

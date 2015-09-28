@@ -50,16 +50,16 @@
           <a class="scroll" data-speed="2000" href="#bars"> <h3>bars</h3></a>
           <a class="scroll" data-speed="2000" href="#coffee"> <h3>coffee</h3></a>
           <a class="scroll" data-speed="2000" href="#shopping"> <h3>shopping</h3></a>
-          <h3>parks</h3>
-          <h3>events</h3>
-          <h3>hotels</h3>
-          <h3>work places</h3>
-          <a class="scroll" data-speed="2000" href="#businessform">   <button> submit a business </button>
-            <a class="scroll" data-speed="2000" href="#stickerform"><button> request a sticker </button>
+          <a class="scroll" data-speed="2000" href="#parks"><h3>parks</h3></a>
+         <a class="scroll" data-speed="2000" href="#events"> <h3>events</h3></a>
+          <a class="scroll" data-speed="2000" href="#hotels"><h3>hotels</h3></a>
+         <a class="scroll" data-speed="2000" href="#hotels"> <h3>work places</h3></a>
+          <a class="scroll" data-speed="2000" href="#businessform">   <button> submit a business </button></a>
+            <a class="scroll" data-speed="2000" href="#stickerform"><button> request a sticker </button></a>
           
             </nav>
     
-          </div></a>
+          </div>
           <br>
   
         </div>
@@ -69,328 +69,171 @@
     <p class="centertext"> tag your dog photos #omahadog on instagram</p>
     <!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/bc5235f2d0ae7cfdfd3084a64be47a1f40df836b.html" id="instansive_bc5235f2d0" name="instansive_bc5235f2d0"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
   
+  <div id="businesses">
+
+
+    <%restaurants = Business.where("category = '1'")%>
+    <%bars = Business.where("category = '2'")%>
+    <%coffees = Business.where("category = '3'")%>
+    <%shoppings = Business.where("category = '4'")%>
+    <%parks = Business.where("category = '5'")%>
+    <%events = Business.where("category = '6'")%>
+    <%hotels = Business.where("category = '7'")%>
+    <%workplaces = Business.where("category = '8'")%>
+
+    <!-- restaurants -->
+
+     <div id="restaurants">
+    <h4> restaurants </h4>
+    <hr>
+    <% restaurants.each do |business| %>
+    <h5> 
+      <%=business.name%>
+      <p> <%=business.area%></p>
+      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+      <br>
+      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+      <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+    </h5> 
+    <%end%>
+    </div>
+    <!-- bars -->
+    <div id="bars">
+    <h4> bars </h4>
+    <hr>
+    <% bars.each do |business| %>
+    <h5> 
+      <%=business.name%>
+      <p> <%=business.area%></p>
+      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+      <br>
+      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+      <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+    </h5> 
+
+    <%end%>
+    </div>
+    <!-- shopping -->
+    <div id="shopping">
+    <h4> shopping </h4>
+    <hr>
+    <% shoppings.each do |business| %>
+    <h5> 
+      <%=business.name%>
+      <p> <%=business.area%></p>
+      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+      <br>
+      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+      <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+    </h5> 
+
+    <%end%>
+    </div>
+    <!-- coffee -->
+    <div id="coffee">
+    <h4> coffee </h4>
+    <hr>
+    <% coffees.each do |business| %>
+    <h5> 
+      <%=business.name%>
+      <p> <%=business.area%></p>
+      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+      <br>
+      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+      <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+    </h5> 
+
+    <%end%>
+    </div>
+    <!-- shopping -->
+    <div id="shopping">
+    <h4> shopping </h4>
+    <hr>
+    <% shoppings.each do |business| %>
+    <h5> 
+      <%=business.name%>
+      <p> <%=business.area%></p>
+      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+      <br>
+      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+      <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+    </h5> 
+
+    <%end%>
+    </div>
+    <!-- parks -->
+    <div id="parks">
+    <h4> parks </h4>
+
+    <hr>
+    <p>(off-the-leash)</p>
+    <% parks.each do |business| %>
+    <h5> 
+      <%=business.name%>
+      <p> <%=business.area%></p>
+      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+      <br>
+      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+      <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+    </h5> 
+
+    <%end%>
+    </div>
+
+    <!-- events -->
+    <div id="events">
+    <h4> events </h4>
+    <hr>
+    <% events.each do |business| %>
+    <h5> 
+      <%=business.name%>
+      <p> <%=business.area%></p>
+      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+      <br>
+      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+      <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+    </h5> 
+
+    <%end%>
+    </div>
+    <!-- hotels -->
+    <div id="hotels">
+    <h4> hotels </h4>
+    <hr>
+    <% hotels.each do |business| %>
+    <h5> 
+      <%=business.name%>
+      <p> <%=business.area%></p>
+      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+      <br>
+      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+     <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+    </h5> 
+
+    <%end%>
+    </div>
+    <!-- works -->
+    <div id="workplaces">
+    <h4> work places </h4>
+    <hr>
+    <% workplaces.each do |business| %>
+    <h5> 
+      <%=business.name%>
+      <p> <%=business.area%></p>
+      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
+      <br>
+      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
+     <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
+    </h5> 
+
+    <%end%>
+    </div>
+
+
+    
+  </div>
   
-    <!-- restaurants  -->
-  
-    <div id="restaurants">
-      <h4>restaurants</h4>
-      <hr>
-      <h5> 
-        Benson Brewery
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/The+Benson+Brewery/@41.2847342,-96.0064637,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xc349ebdfd8b24f64"> 6059 Maple St, Omaha, NE 68104</a>
-        <br><a target="blank" href="tel:402-934-8668">(402) 934-8668</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-    
-    
-      <h5> 
-        Pizza West
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/PizzaWest/@41.180034,-96.101757,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xedcf23064f3b8d5c"> 12040 Mcdermott Plaza, La Vista, NE 68128</a>
-        <br><a target="blank" href="tel:402-933-7499">(402) 933-7499</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-    
-      <h5> 
-        La Buvette
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/la+buvette+omaha/data=!4m2!3m1!1s0x0:0xb088ad37e208b61e?sa=X&ved=0CCQQrwswAGoVChMIkuWasYSWyAIVxo8-Ch2z-Q4E"> 511 S 11th St, Omaha, NE 68102</a>
-        <br><a target="blank" href="tel:402-344-8627">(402) 344-8627</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-    
-      <h5> 
-        Famous Daves
-        <br>
-        <a target="blank" href="https://www.google.com/maps/dir/''/12020+Anne+St,+Omaha,+NE+68137/data=!4m5!4m4!1m0!1m2!1m1!1s0x8793f37051012ae7:0x3339b97371462701?sa=X&ved=0CBAQiBMwAGoVChMI5qGzu4OWyAIVCTs-Ch2oAwdw"> 
-          12020 Anne St, Omaha, NE 68137
-        </a>
-        <br><a target="blank" href="tel:402-829-1616">(402) 829-1616</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-        
-      <h5> 
-        Goldbergs in Dundee
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/Goldbergs+in+Dundee/@41.2598703,-95.991002,17z/data=!3m1!4b1!4m2!3m1!1s0x87938ddb9cd6989f:0xdec769c6d84cb34a"> 
-          5008 Dodge St Omaha, NE 68132
-        </a>
-        <br><a target="blank" href="tel:402-556-2006">(402) 556-2006</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-      <h5> 
-        Marks Bistro
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/marks+omaha/data=!4m2!3m1!1s0x0:0x3e3e468f0bda997d?sa=X&ved=0CCQQrwswAGoVChMIseeoxYaYyAIVA2k-Ch1YywCp"> 		4916 Underwood Ave, Omaha, NE 68132</a>
-        <br><a target="blank" href="tel:402-502-2203">(402) 502-2203</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-    
-      <h5> 
-        Infusion Brewery
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/infusion+brewery/data=!4m2!3m1!1s0x0:0x42ae8516af359d73?sa=X&ved=0CCQQrwswAGoVChMIw7jNg4aWyAIVA2g-Ch1zOQIR"> 	6115 Maple St, Omaha, NE 68104</a>
-        <br><a target="blank" href="tel:402-916-9998">(402) 916-9998</a>
-        <p class="centertext"> dogs allowed inside!</p>
-      </h5>
-      
-      <h5> 
-        Petrows Restaurant
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/Petrow's+Restaurant/@41.238215,-96.004106,17z/data=!3m1!4b1!4m2!3m1!1s0x87938c3628b6352b:0x11c500e1d28af942"> 5914 Center St Omaha, NE 68106</a>
-        <br><a target="blank" href="tel:402-551-0552">(402) 551-0552</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-      
-      <h5> 
-        Chipotle Mexican Grill
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/Chipotle+Mexican+Grill/@41.238215,-96.004106,12z/data=!4m5!1m2!2m1!1schipotle!3m1!1s0x87938da0c8d6c27f:0xfa4a268938429650"> 201 S 72nd St Omaha, NE 68114</a>
-        <br><a target="blank" href="tel:402-391-9979">(402) 391-9979</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-      
-      <h5> 
-        Brix at Midtown Crossing
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/Brix/@41.2579896,-95.9596372,17z/data=!3m1!4b1!4m2!3m1!1s0x87938e42d91c4aa3:0x3f21aa7fa37e2a4d"> 220 S 31st Ave Omaha, NE 68131</a>
-        <br><a target="blank" href="tel:402-991-8466">(402) 991-8466</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-      
-      <h5> 
-        Upstream Old Market
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/Upstream+Brewing+Company/@41.2439937,-96.0563853,12z/data=!4m5!1m2!2m1!1supstream+old+market!3m1!1s0x87938faf5c60a10d:0xd4e4bd7e031e9b78"> 514 S 11th St Omaha, NE 68102</a>
-        <br><a target="blank" href="tel:402-344-0200">(402) 344-0200</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-      
-      <h5> 
-        J's on Jackson
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/J's+on+Jackson/@41.2541913,-95.9308533,17z/data=!3m1!4b1!4m2!3m1!1s0x87938faf50b7d69b:0xa4fefcc0728d6dfa"> 1101 Jackson St Omaha, NE 68102</a>
-        <br><a target="blank" href="tel:402-991-1188">(402) 991-1188</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-      
-      <h5> 
-        Bricks & Mortar Bar and Bistro
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/Bricks+%26+Mortar/@41.2530236,-95.9300688,17z/data=!3m1!4b1!4m2!3m1!1s0x87938fa60393a0a5:0xe8adcf80191ad93b"> 1037 Jones St Omaha, NE 68102</a>
-        <br><a target="blank" href="tel:402-934-0005">(402) 934-0005</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-      
-      <h5> 
-        Black Oak Grill
-        <br>
-        <a target="blank" href="https://www.google.com/maps/place/Bricks+%26+Mortar/@41.2530236,-95.9300688,17z/data=!3m1!4b1!4m2!3m1!1s0x87938fa60393a0a5:0xe8adcf80191ad93b"> 220 S 31st Ave
-Ste 3107 Omaha, NE 68131</a>
-        <br><a target="blank" href="tel:402-341-0622">(402) 341-0622</a>
-        <p class="centertext"> dogs allowed on patio</p>
-      </h5>
-      
-            <h5> 
-              Cantina Laredo
-              <br>
-              <a target="blank" href="https://www.google.com/maps/place/Cantina+Laredo/@41.2594467,-95.9597961,17z/data=!3m1!4b1!4m2!3m1!1s0x87938e4304059e23:0xa378d069163120ba"> 120 S 31st Ave Omaha, NE 68131</a>
-              <br><a target="blank" href="tel:402-345-6000">(402) 345-6000</a>
-              <p class="centertext"> dogs allowed on patio</p>
-            </h5>
-      
-    
-    
-      <!-- bars  -->
-    
-      <div id="bars">
-        <h4>bars</h4>
-        <hr>
-        <h5> 
-          Benson Brewery
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/The+Benson+Brewery/@41.2847342,-96.0064637,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xc349ebdfd8b24f64"> 6059 Maple St, Omaha, NE 68104</a>
-          <br><a target="blank" href="tel:402-934-8668">(402) 934-8668</a>
-          <p class="centertext"> dogs allowed on patio</p>
-        </h5>
-      
-        <h5> 
-          Dundee Cork & Bottle
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/Dundee+Cork+%26+Bottle/@41.2646236,-95.9904225,17z/data=!3m1!4b1!4m2!3m1!1s0x87938ddd963c5b3f:0xa04b68f63b642e76"> 614 N 50th St Omaha, NE 68132</a>
-          <br><a target="blank" href="tel:402-934-2118">(402) 934-2118</a>
-          <p class="centertext"> dogs allowed inside!</p>
-        </h5>
-  
-        <h5> 
-          Holiday Lounge
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/Holiday+Lounge/@41.260339,-96.037598,17z/data=!3m1!4b1!4m2!3m1!1s0x87938d125dda2487:0x5b753f52a5cac10e"> 	7846 Dodge St Omaha, NE 68114</a>
-          <br><a target="blank" href="tel:402-391-4442">(402) 391-4442</a>
-          <p class="centertext"> dogs allowed inside!</p>
-        </h5>
-  
-        <h5> 
-          Infusion Brewery
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/infusion+brewery/data=!4m2!3m1!1s0x0:0x42ae8516af359d73?sa=X&ved=0CCQQrwswAGoVChMIw7jNg4aWyAIVA2g-Ch1zOQIR"> 	6115 Maple St, Omaha, NE 68104</a>
-          <br><a target="blank" href="tel:402-916-9998">(402) 916-9998</a>
-          <p class="centertext"> dogs allowed inside!</p>
-        </h5>
-          
-        <h5> 
-          Pageturners Lounge
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/Pageturners+Lounge/@41.2599587,-95.9907015,17z/data=!3m1!4b1!4m2!3m1!1s0x87938ddb9b286ff1:0x1a2000efd4c93ba7"> 5004 Dodge St Omaha, NE 68132</a>
-          <br><a target="blank" href="tel:402-933-3973">(402) 933-3973</a>
-          <p class="centertext"> dogs allowed on the patio</p>
-          <p class="centertext"> dogs allowed inside!</p>
-        </h5>
-          
-        <h5> 
-          Beercade
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/beercade+omaha/data=!4m2!3m1!1s0x0:0x36734c18bfad28ff?sa=X&ved=0CCcQrwswAGoVChMI1vanwouWyAIVAgw-Ch3y7A4H"> 	6104 Maple St, Omaha, NE 68104</a>
-          <br><a target="blank" href="tel:402-932-3392">(402) 932-3392</a>
-          <p class="centertext"> dogs allowed on the patio</p>
-          <p class="centertext"> dogs allowed inside!</p>
-        </h5>
-  
-        <h5> 
-          The Holiday Lounge
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/Holiday+Lounge/@41.260339,-96.037598,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x5b753f52a5cac10e"> 	7846 Dodge St Omaha, NE 68114</a>
-          <br><a target="blank" href="tel:402-391-4442">(402) 391-4442</a>
-          <p class="centertext"> dogs allowed inside!</p>
-        </h5>
-        
-        <h5> 
-          O'leaver's Pub
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/O'Leaver's+Pub/@41.2460066,-95.9898352,17z/data=!3m1!4b1!4m2!3m1!1s0x87938dd34bd95c0f:0xe9578303bb835ef1"> 	1322 S Saddle Creek Rd Omaha, NE 68106</a>
-          <br><a target="blank" href="tel:402-556-1238">(402) 556-1238</a>
-          <p class="centertext"> dogs allowed on patio</p>
-        </h5>
-  
-  <h5> 
-    The Trap Room
-    <br>
-    <a target="blank" href="https://www.google.com/maps/place/The+Trap+Room/@41.266747,-95.9341002,17z/data=!3m1!4b1!4m2!3m1!1s0x87938fb6189213a1:0xcf0b582b50cafae7"> 	733 N 14th St
-Omaha, NE 68102</a>
-    <br><a target="blank" href="tel:402-505-9368">(402) 505-9368</a>
-    <p class="centertext"> dogs allowed on patio</p>
-    <p class="centertext"> dogs allowed inside!</p>
-  </h5>
-  
-  
-      </div>
-        
-        
-      <!-- coffee  -->
-    
-      <div id="coffee">
-        <h4>coffee</h4>
-        <hr>
-        <h5> 
-          Blue Line Coffee in Dundee
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/Blue+Line+Coffee/@41.2851635,-96.0074571,13z/data=!4m5!1m2!2m1!1sblueline+coffee!3m1!1s0x87938dddf31a976f:0xef244ced6cbbb9f9"> 4924 Underwood Ave Omaha, NE 68132</a>
-          <br><a target="blank" href="tel:402-502-6707">(402) 502-6707</a>
-          <p class="centertext"> dogs allowed inside!</p>
-          <p class="centertext"> dogs allowed on patio</p>
-        </h5>
-          
-          
-        <h5> 
-          Howlin' Hounds Coffee
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/Howlin'+Hounds+Coffee/@41.2529874,-95.9375235,17z/data=!3m1!4b1!4m2!3m1!1s0x87938fab8ec06525:0x6c1258f47fe6809c"> 712 S 16th St Omaha, NE 68102</a>
-          <br><a target="blank" href="tel:402-403-9230">(402) 403-9230</a>
-          <p class="centertext"> dogs allowed on patio</p>
-        </h5>
-          
-        <h5> 
-          Omaha Bicycle Company & Coffee
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/Omaha+Bicycle+Company/@41.2847999,-96.0055062,17z/data=!3m1!4b1!4m2!3m1!1s0x879392755f63fdf9:0x650654afc8d9ef9b"> 6015 Maple St Omaha, NE 68104</a>
-          <br><a target="blank" href="tel:402-315-9900">(402) 315-9900</a>
-          <p class="centertext"> dogs allowed inside!</p>
-          <p class="centertext"> dogs allowed on patio</p>
-        </h5>
-    
-    
-      </div>
-      
-      
-      <!-- shopping -->
-      
-      
-  
-      <div id="shopping">
-        <h4>shopping</h4>
-        <hr>
-        <h5> 
-          Luvbird Boutique
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/luvbird+boutique/data=!4m2!3m1!1s0x0:0xff3cbc17064c7c4b?sa=X&ved=0CCQQrwswAGoVChMIto3q1fyXyAIVAkg-Ch04SgCF"> 2110 S 67th St # 120, Omaha, NE 68106</a>
-          <br><a target="blank" href="tel:402-502-9924">(402) 502-9924</a>
-          <p class="centertext"> dogs allowed inside!</p>
-          
-        </h5>
-        
-        
-        <h5> 
-          Hutch
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/hutch/@41.2579713,-95.9611397,17z/data=!3m1!4b1!4m2!3m1!1s0x87938e4332260395:0x54a41b2959479b24"> 3220 Farnam St #2101, Omaha, NE 68131</a>
-          <br><a target="blank" href="tel:402-403-4590">(402) 403-4590</a>
-          <p class="centertext"> dogs allowed inside!</p>
-          
-        </h5>
-        
-        <h5> 
-          The Afternoon
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/the+afternoon+omaha/data=!4m2!3m1!1s0x0:0xe6ed9c767c4fb2d1?sa=X&ved=0CCQQrwswAGoVChMIqLSyvv2XyAIVRj0-Ch0MQAen"> 3157 Farnam St Suite 7101, Omaha, NE 68131</a>
-          <br><a target="blank" href="tel:402-933-3809">(402) 933-3809</a>
-          <p class="centertext"> dogs allowed inside!</p>
-          
-        </h5>
-        
-        <h5> 
-          Mangelsens
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/mangelsen's+omaha/data=!4m2!3m1!1s0x0:0x131d18b524c735?sa=X&ved=0CCkQrwswAGoVChMIvNn7nP6XyAIVyNg-Ch3Klgcx"> 3457 S 84th St, Omaha, NE 68124</a>
-          <br><a target="blank" href="tel:402-391-6225">(402) 391-6225</a>
-          <p class="centertext"> dogs allowed inside!</p>
-          
-        </h5>
-        
-        
-        <h5> 
-          The Green Spot
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/the+green+spot+omaha/data=!4m2!3m1!1s0x0:0x25572d1122d147a9?sa=X&ved=0CCcQrwswAGoVChMIovXiwv6XyAIVSx0-Ch1eUggF"> 	Shoppes at Aksarben, 1110 S 71st St, Omaha, NE 68106</a>
-          <br><a target="blank" href="tel:402-614-7768">(402) 614-7768</a>
-          <p class="centertext"> dogs allowed inside!</p>
-          
-        </h5>
-        
-        <h5> 
-          Three Dog Bakery
-          <br>
-          <a target="blank" href="https://www.google.com/maps/place/three+dog+bakery/data=!4m2!3m1!1s0x0:0xdfe83c2f8a5788dc?sa=X&sqi=2&ved=0CCQQrwswAGoVChMI1bKC6P6XyAIVwnM-Ch2DTQxt"> 	3201 Farnam St #6108, Omaha, NE 68131</a>
-          <br> <a target="blank" href="https://www.google.com/maps/place/three+dog+bakery+village/data=!4m2!3m1!1s0x0:0x9ec8378b2520ddde?sa=X&ved=0CCQQrwswAGoVChMIsuvblP-XyAIVg2w-Ch17fge0">Village Pointe, 17151 Davenport St #119, Omaha, NE 68118</a>
-          <br><a target="blank" href="tel:402-715-4500">(402) 715-4500</a>
-          <p class="centertext"> dogs allowed inside!</p>
-          
-        </h5>
-        
-        
-        
-        
-      </div>
+
       <!-- forms -->
       <div id="forms">
         <!-- submit business form -->
