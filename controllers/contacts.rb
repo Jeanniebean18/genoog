@@ -10,6 +10,10 @@ get "/entry" do
 erb :"entry"
 end
 
+get "/list" do
+erb list
+end
+
 post "/business" do
 @business = Business.create({name:params[:name], address: params[:address], phone:params[:phone], link:params[:link], area:params[:area], category:params[:category], where:params[:where]})
 
