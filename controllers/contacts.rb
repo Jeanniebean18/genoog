@@ -11,7 +11,7 @@ erb :"entry"
 end
 
 get "/list" do
-erb list
+erb :"list"
 end
 
 post "/business" do

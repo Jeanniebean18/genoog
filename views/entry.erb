@@ -1,15 +1,15 @@
 <h1> Create Business</h1> 
 
 <form action="/business" method="post">
-  <p> Name: <input type="text" placeholder="name" name="name"  class="form" ></p>
-  <p> Address: <input type="text" placeholder="address" name="address"  class="form" ></p>
-  <p> Phone: <input type="text" placeholder="phone" name="phone"  class="form" ></p>
-  <p> Address Link: <input type="text" placeholder="address link" class="form" name="link"  ></p>
-  <p> Area (midtown/downtown): <input type="text" placeholder="area" class="form" name="area"  ></p>
+  <p> Name: <input type="text" placeholder="name" name="name"  class="form" required></p>
+  <p> Address: <input type="text" placeholder="address" name="address"  class="form" required></p>
+  <p> Phone: <input type="text" placeholder="phone" name="phone"  class="form" required></p>
+  <p> Address Link: <input type="text" placeholder="address link" class="form" name="link"  required></p>
+  <p> Area (midtown/downtown): <input type="text" placeholder="area" class="form" name="area"  required></p>
   <!-- what to do with pet information.  -->
   
   Category:
-  <select name="category">
+  <select name="category" >
     <option value="1">restaurants</option>
     <option value="2">bars</option>
     <option value="3">coffee</option>
