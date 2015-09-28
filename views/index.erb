@@ -112,20 +112,6 @@
     </h5> 
 
     <%end%>
-    </div>
-    <!-- shopping -->
-    <div id="shopping">
-    <h4> shopping </h4>
-    <hr>
-    <% shoppings.each do |business| %>
-    <h5> 
-      <%=business.name%>
-      <p> <%=business.area%></p>
-      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
-      <br>
-      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
-      <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
-    </h5> 
 
     <%end%>
     </div>
