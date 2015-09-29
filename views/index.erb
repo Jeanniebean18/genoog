@@ -35,7 +35,7 @@
     <div id="hero">
       <div id="hero-image" class="animated slideInDown">
         <div id="wrapper">
-          <img src ="assets/omahadog-02.svg" id="logo" class="center">
+          <img itemprop="image" src ="assets/omahadog-02.svg" id="logo" class="center">
           <div id="social" class="">
             <a href="http://facebook.com/omahadotdog"> <img src="assets/Facebook.svg" class="facebook"></a>
             <a href="http://twitter.com/omahadotdog"><img src="assets/Twitter.svg" class="facebook"></a>
@@ -223,7 +223,7 @@
   
 
       <!-- forms -->
-      <div id="forms">
+      <div itemscope itemtype="http://schema.org/LocalBusiness" itemref="_name1 _address3" id="forms">
         <!-- submit business form -->
         <h4>Know a dog-friendly business in Omaha? Tell us! Once we confirm it, we'll post it here on the site. </h4>
 
@@ -247,11 +247,12 @@
               <input type="hidden" name="date" value="<%=Time.now%>"> <input type="submit" value="submit" id="submit" class="submit"> 
             </form>
           </div>
-          <img src="assets/omahadog.svg" class="center sticker">
+          <img itemprop="image" src="assets/omahadog.svg" class="center sticker">
         </div>
-        <section id="blue">
+        <section itemscope itemtype="http://schema.org/LocalBusiness" itemref="logo" id="blue">
         
-          <h4 class="white"> Omaha.dog is operated by two best friends that love Omaha, dogs, and the community.</h4>
+          <h4 class="white"> <span id="_name1" itemprop="name"> Omaha.dog </span> is operated by two best friends that love <span id="_address3" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<span itemprop="addressLocality"> Omaha </span></span>, dogs, and the community.</h4>
           <div id="besties" class="center">
           </div>
        
