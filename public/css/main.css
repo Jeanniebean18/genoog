@@ -17,7 +17,25 @@
   
 }
 
-
+#about {
+  position:relative;
+  color:white;
+  background-color:#4EA1D9;
+  padding:8%;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight:200;
+  line-height:35px;
+  text-align:center;
+}
+button.long {
+  width:300px;
+}
+#about:first-line {
+  font-size: 35px;
+  line-height:45px;
+}
 
 .center {
   position:relative;
@@ -97,7 +115,7 @@ h3:hover {
   display:block;
   width:100%;
   background-color:#4EA1D9;
-  padding:5%;
+  padding:8%;
 /*  border:1px solid;*/
   
 }
