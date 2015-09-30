@@ -13,6 +13,7 @@
 #home {
   position:relative;
   width:100%;
+  z-index:500;
   /*  border:1px solid red;*/
   
 }
@@ -74,6 +75,39 @@ h3:hover {
   font-size:15px;
   line-height:17px;
   color:#B2B2B2;
+}
+a.white {
+  color:white;
+}
+a.white:hover {
+  color:black;
+  
+}
+
+.logodog {
+  position:relative;
+  width:50px;
+  float:left;
+  right:-20px;
+}
+#header {
+  display:block;
+  position:fixed;
+  background-color:#4EA2DA;
+  color:white;
+  text-align:center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight:200;
+  line-height:35px;
+  z-index:1;
+  width:100%;
+}
+
+li {
+  display:inline-block;
+  margin-left:25px;
+  margin-right:25px;
 }
 
 #hero {
@@ -457,6 +491,14 @@ b{
     width:220px;
   
   }
+  #header {
+    font-size:16px;
+    padding:0;
+  }
+  li {
+    margin-right:5px;
+    margin-left:5px;
+  }
 }
 
 @media (max-width: 600px){
@@ -546,11 +588,17 @@ b{
   display:none;
   }
   
+  #header {
+    display:none;
+  }
+  
 }
 
 @media (max-width: 414px){
  
-  
+  #header {
+    display:none;
+  }
   #hero {
    
     height:640px;
