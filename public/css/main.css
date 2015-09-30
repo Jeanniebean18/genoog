@@ -45,6 +45,21 @@ button.long {
   display:block;
 }
 
+#fb {
+  width:350px;
+  float:left;
+/*  border:1px solid;*/
+}
+#twitter {
+  width:500px;
+  float:left;
+/*  border:1px solid;*/
+}
+
+#socialwrap{
+  width:850px;
+}
+
 
 body {
   margin: 0;
@@ -499,6 +514,26 @@ b{
     margin-right:5px;
     margin-left:5px;
   }
+}
+@media (max-width: 800px){
+
+#fb {
+  width:300px;
+  float:none;
+  margin-left:-20px;
+/*  border:1px solid;*/
+}
+#twitter {
+  width:300px;
+  float:none;
+/*  border:1px solid;*/
+}
+
+#socialwrap {
+  width:300px;
+/*  border:1px solid;*/
+}
+
 }
 
 @media (max-width: 600px){

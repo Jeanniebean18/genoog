@@ -5,7 +5,9 @@ end
 get "/dog-friendly-omaha-blog" do
   erb :"blog"
 end
-
+get "/thanks" do
+  erb:thanks
+end
 
 
 # get "/list" do
@@ -45,7 +47,7 @@ post "/contacts" do
       :domain => "kickpunchcreative.com"
     }
     })
-    redirect "#thanks" #should redirect to login after creating contact.
+    redirect "/thanks" #should redirect to login after creating contact.
  
  
   end
@@ -68,7 +70,7 @@ post "/contacts" do
         :domain => "kickpunchcreative.com"
       }
       })
-      redirect "#thanks-two" #should redirect to login after creating contact.
+      redirect "/thanks" #should redirect to login after creating contact.
  
  
     end

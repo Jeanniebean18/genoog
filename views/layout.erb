@@ -23,7 +23,7 @@
 <body>
  <div id="home">
    <div id="header">
-     <img class="logodog" src="assets/logodog.svg">
+     <a href="/"><img class="logodog" src="assets/logodog.svg"></a>
      <ul>
       
      <li> <a class="scroll white" data-speed="2000" href="#restaurants"> restaurants</a></li>
@@ -60,7 +60,15 @@
     ga('send', 'pageview');
 
   </script>
-  
+    
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=464863916969329";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
      
   <!-- google analytics -->
   <!-- end google analytics -->
