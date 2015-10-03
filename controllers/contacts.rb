@@ -1,5 +1,5 @@
 get "/" do
-  erb :"index"
+  erb :"index", :layout => :"layout-two"
 end
 
 get "/dog-friendly-omaha-blog" do
