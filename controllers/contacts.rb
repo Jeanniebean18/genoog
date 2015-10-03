@@ -10,9 +10,9 @@ get "/thanks" do
 end
 
 
-# get "/list" do
-#   erb :"list"
-# end
+get "/instagram" do
+  erb :"instagram-feed"
+end
 
 post "/business" do
   @business = Business.create({name:params[:name], address: params[:address], phone:params[:phone], link:params[:link], area:params[:area], category:params[:category], where:params[:where]})
