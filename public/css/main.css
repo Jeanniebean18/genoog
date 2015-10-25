@@ -91,6 +91,12 @@ h3:hover {
   line-height:17px;
   color:#B2B2B2;
 }
+
+#blogger {
+  margin:0;
+  padding:5%;
+  background-color:#F2F2F2;
+}
 a.white {
   color:white;
 }

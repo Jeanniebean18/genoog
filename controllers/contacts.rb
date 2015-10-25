@@ -9,6 +9,7 @@ end
 get "/dogblogger" do
   erb :"dogblogger"
 end
+
 get "/thanks" do
   erb:thanks
 end
