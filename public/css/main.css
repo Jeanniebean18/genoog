@@ -99,6 +99,13 @@ a.white:hover {
   
 }
 
+#mobileheader{
+  position:absolute;
+  top:0;
+  right:7%;
+  display:none;
+}
+
 .logodog {
   position:relative;
   width:50px;
@@ -191,13 +198,18 @@ li {
 
 h1 {
   position:relative;
-  color:white;
+  color:#B2B2B2;
   text-align:center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   font-weight:200;
-  line-height:0px;
+  line-height:35px;
   
+}
+
+h1.white {
+  
+  color:white;
 }
 
 p {
@@ -207,7 +219,7 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight:200;
-  line-height:15px;
+  line-height:19px;
   
   
   
@@ -551,6 +563,10 @@ b{
     /*  border:1px solid red;*/
   }
   
+  #mobileheader {
+    display:block;
+  }
+  
   h5 {
     position:relative;
     color:black;
@@ -646,6 +662,9 @@ b{
     height:640px;
  
  
+  }
+  #mobileheader{
+    display:block;
   }
   
   #social {

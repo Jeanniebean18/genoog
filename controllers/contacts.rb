@@ -5,6 +5,10 @@ end
 get "/dog-friendly-omaha-blog" do
   erb :"blog"
 end
+
+get "/dogblogger" do
+  erb :"dogblogger"
+end
 get "/thanks" do
   erb:thanks
 end
