@@ -2,7 +2,7 @@ get "/" do
   erb :"index", :layout => :"layout-two"
 end
 
-get "/dog-friendly-omaha-blog" do
+get "/omaha-dog-friendly-blog" do
   erb :"blog"
 end
 

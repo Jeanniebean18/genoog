@@ -227,8 +227,10 @@ p {
   font-weight:200;
   line-height:19px;
   
-  
-  
+}
+
+p.left {
+  text-align:left;
 }
 
 #logo {
@@ -281,6 +283,11 @@ h4.white {
   font-weight:200;
   line-height:35px;
   
+}
+
+h4.left {
+  text-align:left;
+  line-height:30px;
 }
 
 hr {
