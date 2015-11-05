@@ -6,6 +6,10 @@ get "/omaha-dog-friendly-blog" do
   erb :"blog"
 end
 
+get "/omaha-dog-friendly-blog/founders-of-omahadog" do
+  erb:"blog/postone"
+end
+
 get "/dogblogger" do
   erb :"dogblogger"
 end

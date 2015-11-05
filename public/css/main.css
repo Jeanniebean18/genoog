@@ -217,6 +217,10 @@ h1.white {
   
   color:white;
 }
+h1.left {
+  text-align:left;
+  font-weight:100;
+}
 
 p {
   position:relative;
@@ -232,6 +236,7 @@ p {
 p.left {
   text-align:left;
 }
+
 
 #logo {
   width:45%;
