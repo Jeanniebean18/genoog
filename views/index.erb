@@ -35,7 +35,7 @@
     <div id="hero">
       <div id="hero-image" class="animated slideInDown">
         <div id="wrapper">
-          <img itemprop="image" src ="assets/omahadog-02.svg" id="logo" class="center">
+          <img itemprop="image" src ="assets/genooglogo.svg" id="logo" class="center">
           <div id="social" class="">
             <a href="http://facebook.com/omahadotdog"> <img src="assets/Facebook.svg" class="facebook"></a>
             <a href="http://twitter.com/omahadotdog"><img src="assets/Twitter.svg" class="facebook"></a>
@@ -46,16 +46,12 @@
      
     
         <nav>
-          <a class="scroll" data-speed="2000" href="#restaurants"> <h3>restaurants</h3></a>
-          <a class="scroll" data-speed="2000" href="#bars"> <h3>bars</h3></a>
-          <a class="scroll" data-speed="2000" href="#coffee"> <h3>coffee</h3></a>
-          <a class="scroll" data-speed="2000" href="#shopping"> <h3>shopping</h3></a>
-          <a class="scroll" data-speed="2000" href="#parks"><h3>parks</h3></a>
-         <a class="scroll" data-speed="2000" href="#events"> <h3>events</h3></a>
-          <a class="scroll" data-speed="2000" href="#hotels"><h3>hotels/apts</h3></a>
-         <a class="scroll" data-speed="2000" href="#workplaces"> <h3>work places</h3></a>
-          <a class="scroll" data-speed="2000" href="#businessform"> <button> submit a business </button></a>
-            <a class="scroll" data-speed="2000" href="#stickerform"><button> request a sticker </button></a>
+          <li>
+          <h3>
+            <ul><a class="scroll" data-speed="2000" href="#restaurants"> download</a></ul>
+           <ul> <a class="scroll" data-speed="2000" href="#bars"> contact</h3></a></ul>
+          
+        </li>
           
             </nav>
     
@@ -71,17 +67,6 @@
   
   <div id="businesses">
 
-
-    <%restaurants = Business.where("category = '1'")%>
-    <%bars = Business.where("category = '2'")%>
-    <%coffees = Business.where("category = '3'")%>
-    <%shoppings = Business.where("category = '4'")%>
-    <%parks = Business.where("category = '5'")%>
-    <%events = Business.where("category = '6'")%>
-    <%hotels = Business.where("category = '7'")%>
-    <%workplaces = Business.where("category = '8'")%>
-
-    <!-- restaurants -->
     <div id="about"> <h1 class="white">Dog-friendly businesses in Omaha</h1>Omaha is very dog-friendly! Us Omahans love to take our dogs wherever we can, and the number of businesses that are dog-friendly keeps growing. Here's our continually growing list of dog-friendly businesses, spaces and events in Omaha.
       Are we missing some? <a class="scroll" data-speed="2000" href="#businessform"> <button class="long">submit a business</button> </a>
     </div>
@@ -89,141 +74,9 @@
     <div id="blogger">
     <h1> Read the latest dog-friendly news from the <a href="http://blog.omaha.dog">Omaha.dog Blog </a>
 </div>
-     <div id="restaurants">
-    <h4> restaurants </h4>
-    <hr>
-    <% restaurants.each do |business| %>
-    <h5> 
-      <%=business.name%>
-      <p> <%=business.area%></p>
-      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
-      <br>
-      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
-      <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
-    </h5> 
-    <%end%>
+     
     </div>
-    <!-- bars -->
-    <div id="bars">
-    <h4> bars </h4>
-    <hr>
-    <% bars.each do |business| %>
-    <h5> 
-      <%=business.name%>
-      <p> <%=business.area%></p>
-      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
-      <br>
-      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
-      <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
-    </h5> 
-
-    <%end%>
-    </div>
-
-    <!-- coffee -->
-    <div id="coffee">
-    <h4> coffee </h4>
-    <hr>
-    <% coffees.each do |business| %>
-    <h5> 
-      <%=business.name%>
-      <p> <%=business.area%></p>
-      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
-      <br>
-      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
-      <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
-    </h5> 
-
-    <%end%>
-    </div>
-    <!-- shopping -->
-    <div id="shopping">
-    <h4> shopping </h4>
-    <hr>
-    <% shoppings.each do |business| %>
-    <h5> 
-      <%=business.name%>
-      <p> <%=business.area%></p>
-      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
-      <br>
-      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
-      <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
-    </h5> 
-
-    <%end%>
-    </div>
-    <!-- parks -->
-    
-    <div id="parks">
-    <h4> parks </h4>
-    <hr>
-    <p>(off-the-leash)</p>
-    
-    <% parks.each do |business| %>
-    <h5> 
-      <%=business.name%>
-      <p> <%=business.area%></p>
-      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
-      <br>
-      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
-      <!-- <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p> -->
-    </h5> 
-
-    <%end%>
-    </div>
-
-    <!-- events -->
-    <div id="events">
-    <h4> events </h4>
-    <hr>
-    <% events.each do |business| %>
-    <h5> 
-      <%=business.name%>
-      <p> <%=business.area%></p>
-      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
-      <br>
-      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
-      <!-- <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p> -->
-    </h5> 
-
-    <%end%>
-    </div>
-    <!-- hotels -->
-    <div id="hotels">
-    <h4> hotels </h4>
-    <hr>
-    <% hotels.each do |business| %>
-    <h5> 
-      <%=business.name%>
-      <p> <%=business.area%></p>
-      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
-      <br>
-      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
-     <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
-    </h5> 
-
-    <%end%>
-    </div>
-    <!-- works -->
-    <div id="workplaces">
-    <h4> work places </h4>
-    <hr>
-    <% workplaces.each do |business| %>
-    <h5> 
-      <%=business.name%>
-      <p> <%=business.area%></p>
-      <a target="blank" href="<%=business.link%>"> 	<%=business.address%> </a>
-      <br>
-      <a target="blank" href="tel:<%=business.phone%>"><%=business.phone%></a>
-     <p> dogs allowed <%=business.where.gsub('"', '').gsub('[','').gsub(']','')%></p>
-    </h5> 
-
-    <%end%>
-    </div>
-
-
-    
-  </div>
+ 
   
 
       <!-- forms -->
