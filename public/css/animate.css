@@ -1776,8 +1776,8 @@
 /*Vertical Sliding*/
 .slidingVertical{
 	display: inline;
-	text-indent: 5px;
-  padding-right:135px;
+	text-indent: 10px;
+  
 }
 
 .slidingVertical span{
@@ -1789,6 +1789,7 @@
 	overflow: hidden;
 	position: absolute;
   
+  
 }
 .slidingVertical span:nth-child(2){
 	animation-delay: 2.5s;
@@ -1799,19 +1800,20 @@
 	animation-delay: 5s;
 	-ms-animation-delay: 5s;
 	-webkit-animation-delay: 5s;
-  text-indent: 25px;
+  
 }
 .slidingVertical span:nth-child(4){
 	animation-delay: 7.5s;
 	-ms-animation-delay: 7.5s;
 	-webkit-animation-delay: 7.5s;
-  text-indent: 29px;
+  
+  
 }
 .slidingVertical span:nth-child(5){
   animation-delay: 10s;
   -ms-animation-delay: 10s;
   -webkit-animation-delay: 10s;
-  text-indent: 25px;
+  
 }
 
 /*topToBottom Animation*/
