@@ -49,6 +49,7 @@
            
           </h2>
           <button class="blue center">download</button>
+          <h5>free forever!</h5>
 
           </div>
         <!-- close wrapper div -->
@@ -60,7 +61,7 @@
               <li>
                 <a class="scroll" data-speed="2000" href="#restaurants"> download</a></li>
                 <li> 
-                  <a class="scroll" data-speed="2000" href="#bars"> contact</a></li>                
+                  <a class="scroll" data-speed="2000" href="#contact"> contact</a></li>                
                 </ul>
                 </h3>
               </nav>
@@ -91,6 +92,23 @@
             <button class="blue center"> download</button>
             <!-- close try it section -->
           </section>
+          
+          <section id="contact">
+           <h4 class="blue">questions?</h4>
+           <p>complete the form below and we’ll contact you soon.</p>
+           
+           <div id="form_container" class="center">
+             <form action="/contacts" method="post"> 
+              <br><input type="name" class="form" placeholder="YOUR NAME" name="name" value="<%=params["name"] %>" required></p>
+              <br> <input type="email" class="form" placeholder="YOUR EMAIL" name="email" value="<%=params["email"]%>" ></p>
+               <br> <input type="textarea" class="form message" placeholder="MESSAGE" name="message" value="<%=params["message"]%>"required>
+               <br><input type="hidden" name="date" value="<%=Time.now%>"> <input type="submit" value="send" class="submit"> 
+             </form>
+          
+          </div>
+            <!-- close try it section -->
+          </section>
+          
           
           
 
