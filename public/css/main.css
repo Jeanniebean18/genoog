@@ -301,6 +301,16 @@ footer {
   
 }
 
+#thankspage {
+  position:relative;
+  width:100%;
+  background-color:#F4F4F4;
+  padding:3% 10% 3% 10%;
+  
+}
+
+
+
 #contact {
   position:relative;
   width:100%;
