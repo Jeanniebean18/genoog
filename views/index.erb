@@ -27,91 +27,109 @@
   <meta name="twitter:description" content="Omaha.dog connects dog-friendly businesses and spaces with the community of Omaha.">
   <meta name="twitter:image" content="http://omaha.dog/facebookshare.png">
 
-<link href="assets/favicon.ico" rel="shortcut icon">
+  <link href="assets/favicon.ico" rel="shortcut icon">
  
   
   <!-- main content -->
   <section id="home">
+    <!-- part one hero  -->
     <div id="hero">
-      <div id="hero-image" class="animated slideInDown">
-        <div id="wrapper">
-          <img itemprop="image" src ="assets/genooglogo.svg" id="logo" class="center">
-          <div id="social" class="">
-            <a href="http://facebook.com/omahadotdog"> <img src="assets/Facebook.svg" class="facebook"></a>
-            <a href="http://twitter.com/omahadotdog"><img src="assets/Twitter.svg" class="facebook"></a>
-            <!-- <p>#omahadog</p> -->
-          </div>
-        </div>
-   
-     
-    
-        <nav>
-          <li>
-          <h3>
-            <ul><a class="scroll" data-speed="2000" href="#restaurants"> download</a></ul>
-           <ul> <a class="scroll" data-speed="2000" href="#bars"> contact</h3></a></ul>
-          
-        </li>
-          
-            </nav>
-    
-          </div>
-          <br>
-  
-        </div>
-      </div>
-    </section>
-     
-    <p class="centertext"> tag your dog photos #omahadog on <a href="/instagram">instagram</a></p>
-    <!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/ca0b1efdc0bc5d67efeb673e5d159e42eeb02f1a.html" id="instansive_ca0b1efdc0" name="instansive_ca0b1efdc0"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-  
-  <div id="businesses">
+      <div id="hero-image" class="animated fadeIn">
+        <div id="wrapper" class="center">
+          <img itemprop="image" src ="assets/genooglogo.svg" id="logo" class="center animated slideInLeft delay1" alt="genoog logo">
+          <h1>CONNECTIONS THAT MATTER </h1>
+          <h2 class="sentence">make personal connections with your
+            <div class="slidingVertical">
+              <span>customers</span>
+              <span>employees</span>
+              <span>clients</span>
+              <span>team</span>
+              <span>friends</span>
+              
+            </div>
+           through the power of video
+          </h2>
+          <button class="blue center">download</button>
 
-    <div id="about"> <h1 class="white">Dog-friendly businesses in Omaha</h1>Omaha is very dog-friendly! Us Omahans love to take our dogs wherever we can, and the number of businesses that are dog-friendly keeps growing. Here's our continually growing list of dog-friendly businesses, spaces and events in Omaha.
-      Are we missing some? <a class="scroll" data-speed="2000" href="#businessform"> <button class="long">submit a business</button> </a>
-    </div>
-    
-    <div id="blogger">
-    <h1> Read the latest dog-friendly news from the <a href="http://blog.omaha.dog">Omaha.dog Blog </a>
-</div>
+          </div>
+        <!-- close wrapper div -->
+   
+        <nav>
+          <br>
+          <ul>
+            <h3>
+              <li>
+                <a class="scroll" data-speed="2000" href="#restaurants"> download</a></li>
+                <li> 
+                  <a class="scroll" data-speed="2000" href="#bars"> contact</a></li>                
+                </ul>
+                </h3>
+              </nav>
+              <!-- close nav -->
+            </div> 
+            <!-- close hero image -->
+          </div>
+          <!-- close hero div -->
+       
+      
      
-    </div>
+     
+  
+      
+     
+     
+     
+     
+     
+    
+  
+          <div id="businesses">
+
+            <div id="about"> <h1 class="white">Dog-friendly businesses in Omaha</h1>Omaha is very dog-friendly! Us Omahans love to take our dogs wherever we can, and the number of businesses that are dog-friendly keeps growing. Here's our continually growing list of dog-friendly businesses, spaces and events in Omaha.
+              Are we missing some? <a class="scroll" data-speed="2000" href="#businessform"> <button class="long">submit a business</button> </a>
+            </div>
+    
+            <div id="blogger">
+              <h1> Read the latest dog-friendly news from the <a href="http://blog.omaha.dog">Omaha.dog Blog </a>
+              </div>
+     
+            </div>
  
   
 
-      <!-- forms -->
-      <div itemscope itemtype="http://schema.org/LocalBusiness" itemref="_name1 _address3" id="forms">
-        <!-- submit business form -->
-        <h4>Know a dog-friendly business in Omaha? Tell us! Once we confirm it, we'll post it here on the site. </h4>
+            <!-- forms -->
+            <div itemscope itemtype="http://schema.org/LocalBusiness" itemref="_name1 _address3" id="forms">
+              <!-- submit business form -->
+              <h4>Know a dog-friendly business in Omaha? Tell us! Once we confirm it, we'll post it here on the site. </h4>
 
-        <div id="businessform" class="center">
-          <div id="thanks"></div>
-          <form action="/contacts" method="post"> 
-            <input type="text" class="form" placeholder="business name" name="name"required></h2>  
-            <input type="hidden" name="date" value="<%=Time.now%>"> <input type="submit" value="submit" id="submit" class="submit "> 
-          </form>
-        </div>
+              <div id="businessform" class="center">
+                <div id="thanks"></div>
+                <form action="/contacts" method="post"> 
+                  <input type="text" class="form" placeholder="business name" name="name"required></h2>  
+                  <input type="hidden" name="date" value="<%=Time.now%>"> <input type="submit" value="submit" id="submit" class="submit "> 
+                </form>
+              </div>
 
-        <!-- get stick form -->
-        <h4>Put an Omaha.dog sticker on your door so customers know you're dog-friendly! 
-          <br>Request one here, and we'll mail it to you.</h4>
+              <!-- get stick form -->
+              <h4>Put an Omaha.dog sticker on your door so customers know you're dog-friendly! 
+                <br>Request one here, and we'll mail it to you.</h4>
 
-          <div id="stickerform" class="center">
-            <div id="thanks-two"></div>
-            <form action="/stickers" method="post"> 
-              <input type="text" class="form" placeholder="business name" name="name" required></h2> 
-              <input type="text" class="form" placeholder="business address" name="address" required></h2>  
-              <input type="hidden" name="date" value="<%=Time.now%>"> <input type="submit" value="submit" id="submit" class="submit"> 
-            </form>
-          </div>
-          <img itemprop="image" src="assets/omahadog.svg" class="center sticker">
-        </div>
-        <section itemscope itemtype="http://schema.org/LocalBusiness" itemref="logo" id="blue">
+                <div id="stickerform" class="center">
+                  <div id="thanks-two"></div>
+                  <form action="/stickers" method="post"> 
+                    <input type="text" class="form" placeholder="business name" name="name" required></h2> 
+                    <input type="text" class="form" placeholder="business address" name="address" required></h2>  
+                    <input type="hidden" name="date" value="<%=Time.now%>"> <input type="submit" value="submit" id="submit" class="submit"> 
+                  </form>
+                </div>
+                <img itemprop="image" src="assets/omahadog.svg" class="center sticker">
+              </div>
+              <section itemscope itemtype="http://schema.org/LocalBusiness" itemref="logo" id="blue">
         
-          <h4 class="white"> <span id="_name1" itemprop="name"> Omaha.dog </span> is operated by two best friends that love <span id="_address3" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-<span itemprop="addressLocality"> Omaha</span></span>, dogs, and the community.</h4>
-          <div id="besties" class="center">
-          </div>
-          <a href="mailto:jeannie@omaha.dog"><p>contact us</p>
+                <h4 class="white"> <span id="_name1" itemprop="name"> Omaha.dog </span> is operated by two best friends that love <span id="_address3" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <span itemprop="addressLocality"> Omaha</span></span>, dogs, and the community.</h4>
+                  <div id="besties" class="center">
+                  </div>
+                  <a href="mailto:jeannie@omaha.dog"><p>contact us</p>
        
-        </section>
+                  </section>
