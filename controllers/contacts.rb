@@ -35,10 +35,10 @@ end
 post "/contacts" do
   
   Pony.mail ( {
-    :to => 'jeannie@kickpunchcreative.com, jeannie@omaha.dog',
+    :to => 'jeannie@kickpunchcreative.com',
     :from => "jeannie@kickpunchcreative.com",
-    :subject => "Omaha.Dog Submission :#{params[:name]}",
-    :body=> "business name: #{params[:name]}",
+    :subject => "Genoog Website Contact From :#{params[:name]}",
+    :body=> "name: #{params[:name]} email: #{params[:email]} message: #{params[:message]}",
     :via => :smtp,
     :via_options => {  
       :address   => 'smtp.gmail.com',  
@@ -50,33 +50,10 @@ post "/contacts" do
       :domain => "kickpunchcreative.com"
     }
     })
-    redirect "/thanks" #should redirect to login after creating contact.
- 
- 
+    redirect "/thanks"
   end
 
-  post "/stickers" do
-  
-    Pony.mail ( {
-      :to => 'jeannie@kickpunchcreative.com, jeannie@omaha.dog',
-      :from => "jeannie@kickpunchcreative.com",
-      :subject => "Omaha.Dog Sticker Request :#{params[:name]}",
-      :body=> "business name: #{params[:name]} business address: #{params[:address]}",
-      :via => :smtp,
-      :via_options => {  
-        :address   => 'smtp.gmail.com',  
-        :port   => '587',  
-        :enable_starttls_auto => true,
-        :user_name   => 'jeannie@kickpunchcreative.com',  
-        :password   => 'genie1983',  
-        :authentication   => :plain,   
-        :domain => "kickpunchcreative.com"
-      }
-      })
-      redirect "/thanks" #should redirect to login after creating contact.
- 
- 
-    end
+
 
     get "/entry" do
       if session[:user_id] # && session[:user_id] == params[:id].to_i
