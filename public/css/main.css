@@ -217,11 +217,11 @@ button.blue {
 
 .submit:hover {
   background-color:#547FC0;
-  color:black;
+  color:white;
 }
 button:hover {
-  background-color:#A6C2E5;
-  color:black;
+  background-color:#BCBEC0;
+  color:white;
 }
 
 h5 {
@@ -235,6 +235,32 @@ h5 {
   
 
 }
+
+#camera {
+  transform-origin:50% 50%;
+  -webkit-transform-origin:50% 50%;
+  -moz-animation-name:none;
+  -o-transform-origin:50% 50%;
+}
+#email {
+  transform-origin:50% 50%;
+  -webkit-transform-origin:50% 50%;
+  -moz-animation-name:none;
+  -o-transform-origin:50% 50%;
+}
+#list {
+  transform-origin:50% 50%;
+  -webkit-transform-origin:50% 50%;
+  -moz-animation-name:none;
+  -o-transform-origin:50% 50%;
+}
+#cloud {
+  transform-origin:50% 50%;
+  -webkit-transform-origin:50% 50%;
+  -moz-animation-name:none;
+  -o-transform-origin:50% 50%;
+}
+
 .form {
   position:relative;
   background-color:#547FC0;
