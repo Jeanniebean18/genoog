@@ -148,9 +148,9 @@ h2 {
   position:relative;
   color:white;
   text-align:center;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Comfortaa', cursive;
   font-size: 30px;
-  font-weight:100;
+  font-weight:300;
   margin-bottom:30px;
 }
 .sentence {
@@ -162,7 +162,7 @@ h3 {
   position:relative;
   color:white;
   text-align:center;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 20px;
   font-weight:300;
  
@@ -171,11 +171,11 @@ h3 {
 
 h4 {
   position:relative;
-  color:#547FC0;
+  color:#A6C2E5;
   text-align:center;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Comfortaa', cursive;
   font-size: 35px;
-  font-weight:100;
+  font-weight:300;
   margin-bottom:25px;
   line-height:0;
 }
@@ -195,7 +195,7 @@ button.blue {
   border-radius:7px;
   background-color:#547FC0;
   color:white;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 20px;
   border:none;
   padding:15px;
@@ -206,7 +206,7 @@ button.blue {
   float:right;
   background-color:#A6C2E5;
   color:white;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 15px;
   border:none;
   padding:15px;
@@ -228,7 +228,7 @@ h5 {
   position:relative;
   color:white;
   text-align:center;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 13px;
   font-weight:100;
   margin-top:12px;
@@ -241,7 +241,7 @@ h5 {
   text-decoration:none;
   border:none;
   text-align:center;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size:20px;
   color:white;
   padding:5%;
@@ -275,7 +275,8 @@ nav {
 footer {
   position:relative;
   bottom:0;
-  color:#E6E7E8;
+  color:#BCBEC0;
+  background-color:#F4F4F4;
   text-align:center;
   font-family: 'Work Sans', sans-serif;
   font-size: 15px;
@@ -307,6 +308,11 @@ footer {
   background-color:#F4F4F4;
   padding:3% 10% 3% 10%;
   
+}
+#howitworks {
+  width:75%;
+ 
+  z-index:500;
 }
 
 
