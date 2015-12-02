@@ -1,36 +1,13 @@
-var score = 0;
-var counter=0
 
-var submit = document.getElementById("submit");
+
+
 var arrow = document.getElementById("arrow");//
-// var q1o2 = document.getElementById("q1o2"); //
-// var q1o3 = document.getElementById("q1o3"); //
-// var q1o4 = document.getElementById("q1o4"); //
-// var result = document.getElementById("result");//
-
-
-// submit.onclick = thanksmessage;
-// q1o2.onclick = process_answer_submission2;
-// q1o3.onclick = process_answer_submission3;
-// q1o4.onclick = process_answer_submission4;
-
-
-// var thanksmessage = function() {
-//   thanks.innerHTML = "thanks";
-//
-// }
-
-// var process_answer_submission2 = function() {
-//  score = score + 3;
-// }
-//
-// var process_answer_submission3 = function() {
-//  score = score + 2;
-// }
-//
-// var process_answer_submission4 = function() {
-//  score = score + 1;
-// }
+var camera = document.getElementById("camera");//
+var email = document.getElementById("email");//
+var list = document.getElementById("list");//
+var cloud = document.getElementById("cloud");//
+var to_cloud = document.getElementById("to_cloud");//
+var from_cloud = document.getElementById("from_cloud");//
 
 
 window.onscroll=inView;
@@ -49,7 +26,22 @@ function inView(){
    
   }
   
+  if(isInViewport(camera)){
+    
+    camera.setAttribute("class","animated pulse delay1");
+    email.setAttribute("class","animated pulse delay2");
+    list.setAttribute("class","animated pulse delay3");
+    cloud.setAttribute("class","animated pulse delay5");
+    to_cloud.setAttribute("class","animated slideInLeft delay4");
+    from_cloud.setAttribute("class","animated slideInRight delay4");
+    
+    
+    
+    
+  }
+  
 }
   
+  var isInViewport=function(elem){var distance=elem.getBoundingClientRect();return(distance.top>=0&&distance.left>=0&&distance.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&distance.right<=(window.innerWidth||document.documentElement.clientWidth));};
 
 

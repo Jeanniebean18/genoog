@@ -12,25 +12,25 @@
 }
 
 .animated.delay2 {
-  -webkit-animation-delay:3s;animation-delay:3s;
+  -webkit-animation-delay:2s;animation-delay:2s;
   -webkit-transform-origin:50% 50%;
   transform-origin:50% 50%;
 }
 .animated.delay3 {
-  -webkit-animation-delay:5s;animation-delay:5s;
+  -webkit-animation-delay:3s;animation-delay:3s;
   -webkit-transform-origin:50% 50%;
   transform-origin:50% 50%;
   
 }
 
 .animated.delay4 {
-  -webkit-animation-delay:7s;animation-delay:7s;
+  -webkit-animation-delay:4s;animation-delay:4s;
   -webkit-transform-origin:50% 50%;
   transform-origin:50% 50%;
   
 }
 .animated.delay5 {
-  -webkit-animation-delay:8s;animation-delay:8s;
+  -webkit-animation-delay:5s;animation-delay:5s;
   -webkit-transform-origin:50% 50%;
   transform-origin:50% 50%;
   
@@ -1801,7 +1801,7 @@
 /*Vertical Sliding*/
 .slidingVertical{
 	display: inline;
-	text-indent: 10px;
+	text-indent: 3px;
   
 }
 
