@@ -1,13 +1,13 @@
 
 
 
-var arrow = document.getElementById("arrow");//
-var camera = document.getElementById("camera");//
-var email = document.getElementById("email");//
-var list = document.getElementById("list");//
-var cloud = document.getElementById("cloud");//
-var to_cloud = document.getElementById("to_cloud");//
-var from_cloud = document.getElementById("from_cloud");//
+var arrow = document.getElementById("arrow");
+var camera = document.getElementById("camera");
+var email = document.getElementById("email");
+var list = document.getElementById("list");
+var cloud = document.getElementById("cloud");
+var to_cloud = document.getElementById("to_cloud");
+var from_cloud = document.getElementById("from_cloud");
 
 
 window.onscroll=inView;
@@ -15,13 +15,13 @@ window.onscroll=inView;
   
 function inView(){
   // roll out of top star
-  if (window.pageYOffset>500) {
+  if (window.pageYOffset>300) {
     arrow.style.display="block";
    
     
   }
 
-  if (window.pageYOffset<500) {
+  if (window.pageYOffset<300) {
     arrow.style.display="none";
    
   }
