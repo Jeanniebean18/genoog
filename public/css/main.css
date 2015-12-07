@@ -358,6 +358,10 @@ footer {
 /*  border:1px solid;*/
   
 }
+#howitworksmobile {
+  display:none;
+  
+}
 
 
 }
@@ -555,6 +559,13 @@ footer {
   }
   br.show {
     display:block;
+  }
+  #howitworks {
+    display:none;
+  }
+  #howitworksmobile {
+    display:block;
+    margin-top:-20px;
   }
   
 }
