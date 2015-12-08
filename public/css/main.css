@@ -125,6 +125,7 @@ h1 {
   font-size: 60px;
   font-weight:400;
   line-height:0;
+  margin-bottom:45px;
   
 }
 
@@ -152,8 +153,8 @@ h2 {
   position:relative;
   color:white;
   text-align:center;
-  font-family: 'Questrial', sans-serif;
-  font-size: 35px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 31px;
   font-weight:300;
   margin-bottom:30px;
 }
@@ -177,7 +178,7 @@ h4 {
   position:relative;
   color:#547FC0;
   text-align:center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 35px;
   font-weight:300;
   margin-bottom:25px;
@@ -354,7 +355,7 @@ footer {
   position:relative;
   width:100%;
   padding:3% 10% 3% 10%;
-  margin-bottom:50px;
+  margin-bottom:8%;
 /*  border:1px solid;*/
   
 }
@@ -422,7 +423,7 @@ footer {
     position:relative;
     color:white;
     text-align:center;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 25px;
     font-weight:300;
     margin-bottom:30px;
@@ -434,7 +435,7 @@ footer {
     position:relative;
     color:#547FC0;
     text-align:center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 40px;
     font-weight:300;
     margin-bottom:25px;
@@ -445,6 +446,15 @@ footer {
     width:100%;
     background-color:#A6C2E5;
     padding:3% 10% 10% 10%;
+  
+  }
+  
+  #contact {
+    position:relative;
+    width:100%;
+    padding:3% 10% 3% 10%;
+    margin-bottom:18%;
+  /*  border:1px solid;*/
   
   }
  
@@ -466,7 +476,7 @@ footer {
     position:relative;
     color:white;
     text-align:center;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 21px;
     font-weight:300;
     margin-bottom:30px;
@@ -514,11 +524,12 @@ footer {
     position:relative;
     color:white;
     text-align:center;
-    font-family: 'Questrial', sans-serif;
-    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
     font-weight:300;
     margin-bottom:30px;
     line-height:30px;
+    
     
   }
   
@@ -583,8 +594,8 @@ footer {
     position:relative;
     color:white;
     text-align:center;
-    font-family: 'Questrial', sans-serif;
-    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
     font-weight:300;
     margin-bottom:30px;
     line-height:30px;
@@ -608,7 +619,7 @@ footer {
     position:relative;
     color:#547FC0;
     text-align:center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 40px;
     font-weight:300;
     margin-bottom:25px;
