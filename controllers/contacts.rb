@@ -2,19 +2,8 @@ get "/" do
   erb :"index", :layout => :"layout-two"
 end
 
-
-
-get "/dogblogger" do
-  erb :"dogblogger"
-end
-
 get "/thanks" do
   erb:thanks
-end
-
-
-get "/instagram" do
-  erb :"instagram-feed"
 end
 
 post "/business" do
@@ -54,8 +43,7 @@ post "/contacts" do
   end
 
 
-
-    get "/entry" do
+  get "/entry" do
       if session[:user_id] # && session[:user_id] == params[:id].to_i
         
         erb :entry
