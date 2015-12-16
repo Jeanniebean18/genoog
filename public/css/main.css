@@ -86,14 +86,11 @@ br.show {
   padding-top:3%;
   display:block;
   width:100%;
-  height:820px;
-  background-image:url('../assets/hero.png');
+  height:720px;
+  background:url("../assets/hero.png");
   background-color:black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position:50% 50%;
+  background-size:cover;
+  background-position:50% 10%;
  
 }
 
@@ -381,10 +378,10 @@ footer {
     display:block;
     width:100%;
     height:650px;
-    
+    background:url("../assets/hero.png");
     background-color:black;
     background-size:cover;
-    background-position:50% 50%;
+    background-position:50% 10%;
  
   }
   #wrapper {
