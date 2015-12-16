@@ -89,7 +89,10 @@ br.show {
   height:820px;
   background: url("../assets/hero.png");
   background-color:black;
-  background-size:cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-position:50% 50%;
  
 }
