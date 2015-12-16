@@ -1,5 +1,5 @@
 get "/" do
-  erb :"index", :layout => :"layout-two"
+  erb :"index", :layout => :"layout"
 end
 
 get "/thanks" do
